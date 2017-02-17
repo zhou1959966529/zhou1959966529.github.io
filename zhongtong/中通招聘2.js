@@ -5,7 +5,6 @@
     var mySwiper = new Swiper ('.swiper-container', {
         direction: 'vertical',
     })
-
 //    旋转动画
     var music=document.querySelector('.img-1-4');
     var audio=document.querySelector('audio');
@@ -18,4 +17,14 @@
             music.style.webkitAnimationPlayState='paused';
         }
     }
+
+    //横竖屏状态
+    window.addEventListener("orientationchange", function() {
+        if (window.orientation === 180 || window.orientation === 0) {
+            alert('竖屏状态！');
+        }
+        if (window.orientation === 90 || window.orientation === -90 ){
+            alert('横屏状态！');
+        }
+    }, false);
 })()
