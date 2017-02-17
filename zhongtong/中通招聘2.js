@@ -21,10 +21,10 @@
     //横竖屏状态
     window.addEventListener("orientationchange", function() {
         if (window.orientation === 180 || window.orientation === 0) {
-            alert('竖屏状态！');
+            //alert('竖屏状态！');
         }
         if (window.orientation === 90 || window.orientation === -90 ){
-            alert('横屏状态！');
+            alert('当前为横屏状态,竖屏状态下体验效果更佳!');
         }
     }, false);
 })()
