@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/ionicons.css">
+    <link rel="stylesheet" href="//g.alicdn.com/msui/sm/0.6.2/css/sm.min.css">
+    <script type='text/javascript' src='//g.alicdn.com/sj/lib/zepto/zepto.min.js' charset='utf-8'></script>
+    <script type='text/javascript' src='//g.alicdn.com/msui/sm/0.6.2/js/sm.min.js' charset='utf-8'></script>
+</head>
+<body>
+<div class="page-group">
+    <div class="page page-current" id="router">
+        <!-- 标题栏 -->
+        <header class="bar bar-nav header">
+            <h1 class="title">首页</h1>
+        </header>
+
+        <!-- 工具栏 -->
+        <nav class="bar bar-tab" id="wd">  <!---->
+
+            <!--<a class="tab-item external" href="test2.html">-->
+            <!--<i class="ion-ios-chatboxes-outline"  id="wd-i1"></i>-->
+            <!--<span class="tab-label">话题</span>-->
+            <!--</a>-->
+            <!--<a class="tab-item external" href="test3.html">-->
+            <!--<i class="ion-ios-eye-outline" id="wd-i2"></i>-->
+            <!--<span class="tab-label">发现</span>-->
+            <!--</a>-->
+            <!--<a class="tab-item external" href="test4.html">-->
+            <!--<i class="ion-ios-chatbubble-outline" id="wd-i3"></i>-->
+            <!--<span class="tab-label">消息</span>-->
+            <!--</a>-->
+            <!--<a class="tab-item external" href="test5.html">-->
+            <!--<i class="ion-ios-person-outline" id="wd-i4"></i>-->
+            <!--<span class="tab-label">我的</span>-->
+            <!--</a>-->
+        </nav>
+        <!-- 这里是页面内容区 -->
+        <div class="content">
+            <div class="content-block">
+                <a class="tab-item  active" href="#router3">
+                    <i class="ion-ios-home-outline"  id="wd-i"></i>
+                    <span class="tab-label">首页</span>
+                </a>
+                <!--<a href="#router3">内联的新页面</a>-->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="page-group">
+    <div class="page" id='router3'>
+        <header class="bar bar-nav">
+            <a class="button button-link button-nav pull-left back" href="/docs-demos/router">
+                <span class="icon icon-left"></span>
+                返回
+            </a>
+            <h1 class='title'>路由</h1>
+        </header>
+        <div class="content">
+            <div class="content-block">
+                这是内联编写的页面，点击左上角的 <a href="#" class='back'>返回</a> 按钮返回上一页。
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
