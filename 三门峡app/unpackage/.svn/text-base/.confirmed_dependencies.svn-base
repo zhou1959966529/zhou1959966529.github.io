@@ -1,0 +1,32 @@
+{
+  "index.html": {
+    "resources": [
+      "css/Grid_style.css",
+      "images/menu_fyhj.png",
+      "images/menu_mjbg.png",
+      "images/menu_mjxz.png",
+      "fonts/mui.ttf",
+      "js/JSpro/index.js",
+      "css/mui.min.css",
+      "images/menu_jcxx.png",
+      "images/menu_tgyw.png"
+    ],
+    "refer": []
+  },
+  "Login.html": {
+    "resources": [
+      "js/common/mui.min.js",
+      "images/user.png",
+      "css/Logo-style.css",
+      "js/common/jquery-1.11.1.js",
+      "fonts/mui.ttf",
+      "css/mui.min.css",
+      "images/password.png",
+      "js/common/jsonp1.js",
+      "js/JSpro/login.js"
+    ],
+    "refer": [
+      "index.html"
+    ]
+  }
+}

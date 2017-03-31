@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title></title>
+    <link href="css/mui.min.css" rel="stylesheet"/>
+	<link rel="stylesheet" href="css/Grid_style.css">
+</head>
+<body>
+	<!--基础信息Basic information -审核
+		费用核减Cost reduction-审核
+		面积变更 Area change-审核
+		费用调整 Cost adjustment-审核
+		停供恢复 Stop recovery-审核
+		停供业务 Stop business-审核
+		拆网业务 Open network service-审核
+		面积新增 New Area-审核
+		-->
+		<header class="mui-bar mui-bar-nav">
+			<h1 class="mui-title">三门峡收费审核</h1>
+		</header>
+		<div class="mui-content">
+		    <ul class="mui-table-view mui-grid-view mui-grid-9" style="background: #fff;">
+		        <li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/BasicInformation.html')">
+						<span class="mui-icon mui-icon-jcxx">基础信息</span>
+						<div class="mui-media-body">基础信息</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/CostReduction.html')">
+		            	<span class="mui-icon mui-icon-fyhj">费用核减</span>
+		            	<div class="mui-media-body">费用核减</div>
+					</a>
+				</li>
+		    	<li class="mui-table-view-cell mui-media mui-col-xs-6">
+					<a href="javascript:toView('pro/AreaChange.html')">
+		        		<span class="mui-icon mui-icon-mjbg">面积变更(老用户)</span>
+						<div class="mui-media-body">面积变更(老用户)</div>
+					</a>
+				</li>
+				<!--<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/CostAdjustment.html')">
+		        		<span class="mui-icon mui-icon-fytz">费用调整</span>
+		    			<div class="mui-media-body">费用调整</div>
+					</a>
+				</li>-->
+				<!--<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/StopRecovery.html')">
+		        		<span class="mui-icon mui-icon-tghf">停供恢复</span>
+		    			<div class="mui-media-body">停供恢复</div>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/NewArea.html')">
+						<span class="mui-icon mui-icon-mjxz">面积新增(新入网)</span>
+						<div class="mui-media-body">面积新增(新入网)</div>
+					</a>
+				</li>
+				<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/StopBusiness.html')">
+		    			<span class="mui-icon mui-icon-tgyw">停供业务</span>
+						<div class="mui-media-body">停供业务</div>
+					</a>
+				</li>
+				<!--<li class="mui-table-view-cell mui-media mui-col-xs-6" >
+					<a href="javascript:toView('pro/OpenNetworkService.html')">
+						<span class="mui-icon mui-icon-cwyw">拆网业务</span>
+						<div class="mui-media-body">拆网业务</div>
+					</a>
+				</li>-->
+				<li class="mui-table-view-cell mui-media mui-col-xs-6" style="width:100%;">
+					<a id="close" style="background:#3399fe;color:#FFF;border:none;">
+						<div onclick="close">退出系统</div>
+					</a>
+				</li>
+			</ul> 
+		</div>
+		<script src="js/JSpro/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

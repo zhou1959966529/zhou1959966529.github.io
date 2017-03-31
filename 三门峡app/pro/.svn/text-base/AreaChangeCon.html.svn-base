@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>投诉处理</title>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+		<style type="text/css">	
+		/*多选按钮样式开始*/		
+			.mui-checkbox input[type=checkbox]:before, .mui-radio input[type=radio]:before {	
+				font-size: 16px;
+			}		
+			.mui-checkbox input[type=checkbox], .mui-radio input[type=radio] {
+				top:9px;
+			}
+			.mui-input-row label {
+				padding-top:12px;
+				padding-bottom:5px;
+			}
+			.mui-radio.mui-left label {
+				padding-left: 30px;
+				padding-right: 5px;
+			}
+			.mui-checkbox.mui-left input[type=checkbox], .mui-radio.mui-left input[type=radio] {
+				left:10px;
+			}
+		/*多选按钮样式结束*/
+			h5.mui-content-padded {
+				display:inline-block;
+				margin-left: 0px;				
+				margin-top: 20px !important;
+			}
+			h5.mui-content-padded:first-child {
+				margin-top: 12px !important;
+			}
+			.mui-btn {
+				font-size: 14px;
+				padding: 8px;
+				margin: 5px 0;
+				
+			}
+			
+			.ui-alert {
+				text-align: center;
+				padding: 20px 10px;
+				font-size: 16px;
+			}
+			* {
+				-webkit-touch-callout: none;
+				-webkit-user-select: none;
+			}
+			.mui-table-view-cell span{
+				display: inline-block;
+				margin-left: -170px;
+				font-size: 14px;
+				font-weight: 400;
+				color: #8f8f94;
+			}
+			
+			.mui-table-view-cell {
+			    position: relative;
+			    overflow: hidden;
+			    padding: 6px 10px;
+			    -webkit-touch-callout: none;
+			}
+			.mui-table-view {
+			    padding: 6px;
+			    /* margin: 1px; */
+			    margin-top: 5px;
+			    margin-left: 0px;
+			    width: 61%;
+			    display: inline-block;
+			}
+			input.mui-input-clear{
+				line-height: 21px;
+			    width: 61%;
+			    height: 40px;
+				margin-bottom: 0;
+			    padding: 10px 15px;
+			    -webkit-user-select: text;
+			    border: 1px solid rgba(0,0,0,.2);
+			    border-radius: 3px;
+			    outline: 0;
+			    background-color: #fff;
+			    -webkit-appearance: none;
+			    font-size: 14px;
+			}
+			ul.show_list{
+				    border-bottom: 1px dashed #ccc;
+			}
+			li {
+		    margin-top: 20px;
+				}
+		</style>
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left a-width">
+				<span style="font-size: 0.7em;color:#3399fe;margin-left:-8px;">返回</span>
+			</a>
+			<h1 class="mui-title">任务处理</h1>
+		</header>
+		<input type="hidden" id="executor" />
+		<input type="hidden" id="taskId" />
+		<input type="hidden" id="isContent" />
+		<input type="hidden" id="result" />
+		<input type="hidden" name="" id="stateCmd_id" value="" />
+
+		<div class="mui-content">
+			<div class="mui-content-padded">
+				<ul>
+					<li>
+						<h5 class="mui-content-padded">审核级别</h5>
+						<select class="mui-btn mui-btn-block dwon" id="shjb">
+						</select>
+					</li>
+					<li>
+						<h5 class="mui-content-padded">处理人</h5>
+						<input type="text" class="mui-input-clear" placeholder="处理人"id="usrI" readonly>
+					</li>
+					<li>
+						<h5 class="mui-content-padded">备注</h5>
+						<input type="text" class="mui-input-clear" placeholder="备注" id="resultId">
+					</li>
+					<li>
+						<h5 class="mui-content-padded">地址</h5>
+						<p style="display: inline-block;width: 60%;" id="address"></p>
+					</li>
+					<li>
+						<h5 class="mui-content-padded" id="conTel" style="float: left;">审核内容</h5>
+						<p style="display: inline-block;width: 60%;" id="desc"></p>	
+					</li>
+					<li>
+						<h5 class="mui-content-padded">工单编号</h5>
+						<p style="display: inline-block;width: 60%;" id="id1"></p>
+					</li>
+					<li>
+						<h5 class="mui-content-padded">发起时间</h5>
+						<p style="display: inline-block;width: 60%;" id="handleTime"></p>
+					</li>
+				</ul>
+				
+			
+				
+				<!--<h5 class="mui-content-padded">是否满意</h5>
+				<select class="mui-btn mui-btn-block dwon" id="isContentId">
+					<option value="非常满意">非常满意</option>
+					<option value="比较满意">比较满意</option>
+					<option value="满意">满意</option>
+					<option value="不满意">不满意</option>
+					<option value="很不满意">很不满意</option>
+					
+				</select>	-->
+				
+				
+				<!--<h5 class="mui-content-padded">联系人</h5>
+				<p style="display: inline-block;width: 60%;" id="linkmanId"></p>
+				<h5 class="mui-content-padded">联系电话</h5>
+				<p style="display: inline-block;width: 60%;" id="telId"></p>
+				
+				<h5 class="mui-content-padded">当前状态</h5>-->
+				<!--<p style="display: inline-block;width: 60%;" id="cmd"></p>-->
+				<div class="mui-button-row">
+						<button style="width:100px;" type="button" class="mui-btn mui-btn-primary" onclick="return false;"id="pass">通过</button>
+						<button style="width:100px;" type="button" class="mui-btn mui-btn-primary" onclick="return false;"id="nopass">不通过</button>
+				</div>
+			</div>
+		</div>
+		<script src="../js/common/mui.min.js"></script>
+		<script src="../js/common/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common/jsonp1.js" type="text/javascript" charset="utf-8"></script>
+		<!--页面数据交互-->
+		<script src="../js/JSpro/mianjibiangeng-NY.js" type="text/javascript"></script>
+	</body>
+</html>

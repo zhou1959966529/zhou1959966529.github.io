@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html class="ui-page-login">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=yes, minimum-scale=0.4, initial-scale=1" />
+		<title>登录页面</title>
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link href="css/Logo-style.css" rel="stylesheet" />
+		<style>
+			#close{
+				margin:0;
+			}
+			.mui-bar-nav .a-width{
+				padding:0;
+				height: 44px;
+				line-height: 44px;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-icon mui-pull-left a-width" id="close">
+				<span style="font-size: 0.7em;color:#3399fe;margin-left:-8px;">关闭</span>
+			</a>
+			<h1 class="mui-title">用户登录</h1>
+		</header>
+		<div class="mui-content" style="background:#fff; background-size:100% 100%;">
+			<div style="height:40px;"></div>
+			<form id='login-form' class="mui-input-group" style="background: none;">
+				<div class="mui-input-row" style="background: #fff;">
+					<label><a id="icon-person"><span class="mui-icon mui-icon-person">用户名1111</span></a></label>
+					<input id='account' type="text" class="mui-input-clear mui-input" placeholder="admin">
+				</div>
+				<div class="mui-input-row" style="background: #fff;">
+					<label><a><span class="mui-icon mui-icon-locked">密码</span></a></label>
+					<input id='password' type="password" class="mui-input-clear mui-input" placeholder="密码">
+				</div>
+			</form>
+			<div class="mui-content-padded">
+				<button id='login' style="background:#3399fe;border-color:#3399fe;" class="mui-btn mui-btn-block mui-btn-primary">登录</button>
+			</div>
+			<div class="mui-content-padded oauth-area">
+				
+			</div>
+		</div>
+		<script src="js/common/mui.min.js"></script>
+		<script src="js/common/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common/jsonp1.js" type="text/javascript" charset="utf-8"></script>
+		<!--页面数据交互-->
+		<script src="js/JSpro/login.js" type="text/javascript"></script>
+	</body>
+
+</html>

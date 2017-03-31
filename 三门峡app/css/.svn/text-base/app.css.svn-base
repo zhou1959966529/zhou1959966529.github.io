@@ -1,0 +1,114 @@
+
+*{ margin:0; padding:0; list-style:none;/* color:#4e4e4e; */color:#000;text-decoration: none;}
+html,
+body,
+.mui-content {
+	/* height: 0px; */
+	margin: 0px;
+	background-color: #fff;
+}
+html {font-size: 18px;/*10 ÷ 16 × 100% = 62.5%*/}
+
+h5.mui-content-padded {
+    display: inline-block;
+    /* margin-left: 20px; */
+    width: 24%;
+    font-size: 16px;
+	margin:8px;
+    margin-top: 10px !important;
+	color:#000;
+}
+.mui-btn {
+    font-size: 14px;
+    padding: 8px;
+    /*margin: 3px;*/
+}
+.mui-btn-block {
+	border:1px solid rgba(0,0,0,.2)!important;
+    font-size: 18px;
+    display: inline-block;
+    width: 60%;
+    margin-bottom: 10px;
+    padding: 15px 0;
+
+}
+.showPage {
+    width: 100%;
+	border-bottom:1px solid #eee;
+}
+ul.show_list {
+	color:#4e4e4e;
+    font-size: 0.7rem;
+}
+ul.show_list span {
+    /* color: #2A45A5; */
+    display: inline-block;
+    padding-left: 0.5rem;
+    padding-top: 0.8rem;
+	width:34%;
+    padding-right: 1rem;
+    font-size: 18px;
+}
+span.SS_name {
+    width: 5rem;
+    height: 1.8rem;
+    display: inline-block;
+    text-align: right;
+	color:#2A45A5;
+}
+
+ ul.show_list p {
+    display: inline-block;
+	padding-left:0.25rem;
+	width: 60%;
+    word-wrap: break-word;
+    word-break: normal;
+}
+p {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+a{
+	color:#3399fe;
+}
+a:hover{
+	color:#3399fe;
+}
+
+
+/*筛选弹出菜单*/
+.mui-popover {
+	width:100%;
+	border-radius: 0;
+	padding:10px;
+}
+.mui-btn-outlined.mui-btn-blue, .mui-btn-outlined.mui-btn-primary{
+	border:none;
+	border-radius: 6px;
+	background:rgba(0,0,0,.1);
+	color:#000;
+}
+
+/* select下拉箭头 */
+.dwon {
+	background:url(../images/dwon1.png) no-repeat right;
+}
+
+/* 返回/筛选按钮样式width */
+.mui-bar-nav .a-width{
+	padding:0;
+	height: 44px;
+	line-height: 44px;
+}
+
+/* 稽查提交 */
+
+
+/*每个页面头部的返回/筛选按钮样式*/
+#top_buttom{
+	font-size: 0.7em;
+	color:#3399fe;
+	margin-left:-8px;
+}

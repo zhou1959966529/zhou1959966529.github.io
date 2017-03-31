@@ -1,0 +1,63 @@
+
+/*工单页面css样式*/
+	* {
+		-webkit-touch-callout: none;
+		-webkit-user-select: none;
+	}
+
+	h5.mui-content-padded {
+		display:inline-block;
+		margin-left: 0px;				
+		margin-top: 20px !important;
+	}
+	h5.mui-content-padded:first-child {
+		margin-top: 12px !important;
+	}
+	.mui-btn {
+		font-size: 14px;
+		padding: 8px;
+		margin: 5px 0;
+	}
+	.ui-alert {
+		text-align: center;
+		padding: 20px 10px;
+		font-size: 16px;
+	}
+	.mui-table-view-cell span{
+		display: inline-block;
+		margin-left: -170px;
+		font-size: 14px;
+		font-weight: 400;
+		color: #8f8f94;
+	}
+	.mui-table-view-cell {
+	    position: relative;
+	    overflow: hidden;
+	    padding: 6px 10px;
+	    -webkit-touch-callout: none;
+	}
+	.mui-table-view {
+	    padding: 6px;
+	    /* margin: 1px; */
+	    margin-top: 5px;
+	    margin-left: 0px;
+	    width: 61%;
+	    display: inline-block;
+	}
+	input.mui-input-clear{
+		line-height: 21px;
+	    width: 61%;
+	    height: 40px;
+		margin-bottom: 0;
+	    padding: 10px 15px;
+	    -webkit-user-select: text;
+	    border: 1px solid rgba(0,0,0,.2);
+	    border-radius: 3px;
+	    outline: 0;
+	    background-color: #fff;
+	    -webkit-appearance: none;
+	    font-size: 14px;
+	}
+	ul.show_list{
+		border-bottom: 1px dashed #ccc;
+	}

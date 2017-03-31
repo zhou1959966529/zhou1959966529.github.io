@@ -1,0 +1,73 @@
+﻿body{
+	background-color:#fff;
+}
+.mui-content {
+	background:#fff;
+}
+.mui-grid-view.mui-grid-9 {
+	border:none;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell {
+	border:none;
+}
+.mui-grid-view.mui-grid-9 .mui-table-view-cell>a:not(.mui-btn) {
+	border:1px solid #ddd;
+	border-radius:0.2rem;
+}
+
+a{
+	color: #ff9933;
+}
+a:hover{
+	color: #ff9933;
+}
+
+
+.mui-icon-jcxx{
+	padding:5px 24px;
+	background:url(../images/menu_jcxx.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-fyhj{
+	padding:5px 24px;
+	background:url(../images/menu_fyhj.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-mjbg{
+	padding:5px 24px;
+	background:url(../images/menu_mjbg.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-fytz{
+	padding:5px 24px;
+	background:url(../images/menu_fytz.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-tghf{
+	padding:5px 24px;
+	background:url(../images/menu_tghf.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-tgyw{
+	padding:5px 24px;
+	background:url(../images/menu_tgyw.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-cwyw{
+	padding:5px 24px;
+	background:url(../images/menu_cwyw.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}
+.mui-icon-mjxz{
+	padding:5px 24px;
+	background:url(../images/menu_mjxz.png) no-repeat;
+	background-size:50px 50px;
+	text-indent:-999px;
+}

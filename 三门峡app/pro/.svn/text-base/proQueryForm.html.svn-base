@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<title>任务查询</title>
+		<!--标准mui.css-->
+		<link rel="stylesheet" href="../css/mui.min.css">
+		<!--App自定义的css-->
+		<link rel="stylesheet" type="text/css" href="../css/app.css" />
+
+		<link rel="stylesheet" type="text/css" href="../css/mui.picker.min.css" />
+		<link rel="stylesheet" type="text/css" href="../css/Task.css" />
+	</head>
+
+	<body>
+		<header class="mui-bar mui-bar-nav">
+			<a class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left a-width">
+				<span id="top_buttom">返回</span>
+			</a>
+			<h1 class="mui-title">任务查询</h1>
+		</header>
+		<div class="mui-content">
+			<div class="mui-content-padded" style="display:block;">
+				<h5 class="mui-content-padded" >用户名称</h5>
+				<input type="text" class="mui-input-clear" placeholder="用户名"id="userName">
+				<h5 class="mui-content-padded" >用户编码</h5>
+				<input type="text" class="mui-input-clear" placeholder="用户编码"id="userCode">
+				<h5 class="mui-content-padded">开始时间</h5>
+				<button id='startDateId' data-options='{"type": "date"}' class="btn mui-btn mui-btn-block">选择日期时间 ...</button>
+				<h5 class="mui-content-padded">结束时间</h5>
+				<button id='endDateId' data-options='{"type": "date"}' class="btn mui-btn mui-btn-block">选择日期时间 ...</button>
+				<div class="mui-button-row">
+						<button type="button" class="mui-btn mui-btn-primary" onclick="return false;" id="rw_btn">确认</button>&nbsp;&nbsp;
+						<button type="button" class="mui-btn mui-btn-danger" onclick="return false;">取消</button>
+				</div>
+			</div>
+		</div>		
+		<script src="../js/common/mui.min.js"></script>
+		<script src="../js/common/jquery-1.11.1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common/jsonp1.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/JSpro/mui.picker.min.js"></script>
+		<!--页面数据交互-->
+		<script src="../js/JSpro/taskQueryForm.js"></script>
+	</body>
+
+</html>
