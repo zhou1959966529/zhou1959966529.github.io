@@ -1,2 +1,2 @@
 # zhou1959966529.github.io
-New Objece()
+New Object()
